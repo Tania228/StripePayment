@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Платежная форма для товара {{item.name}}</title>
+
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+</head>
+<body>
+    <div class="item-form">
+
+        <div class="item-name">{{item.name}}</div>
+        <div class="item-description">{{item.description}}</div>
+        <div class="item-price">{{item.price}}</div>
+
+        <button class="btn" data-item-id="{{ item.id }}"
+                data-stripe-key="{{ publishable_key }}">
+            BUY
+        </button>
+
+    </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{% static 'app/js/stripe.js' %}?v=2"></script>
+</body>
+</html>
