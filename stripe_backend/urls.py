@@ -25,5 +25,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls')),
 
-    path('__debug__/', include(debug_toolbar.urls)),  # не забывать ставить эту строку в конец!!
+    path('__debug__/', include(debug_toolbar.urls)),
 ]

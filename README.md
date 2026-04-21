@@ -2,7 +2,7 @@
 
 Django проект с интеграцией Stripe для оплаты товаров и заказов.
 
-## 🚀 Быстрый старт
+## Быстрый старт
 
 ### Локальный запуск
 
@@ -13,8 +13,7 @@ cd Stripe_backend_tz
 
 2. Создать виртуальное окружение
 python -m venv venv
-venv\Scripts\activate  # Windows
-# source venv/bin/activate  # Mac/Linux
+venv\Scripts\activate 
 
 3. Установить зависимости
 pip install -r requirements.txt
